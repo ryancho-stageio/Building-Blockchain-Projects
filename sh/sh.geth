@@ -1,4 +1,10 @@
+# main network
+#geth --datadir "../../data_test" --networkid 1 --syncmode "fast"
+
 # test network
-#geth --datadir "../data_test" --networkid 2
+#geth --datadir "../../data_test" --networkid 2
+
 # dev network
-geth --datadir "../data_dev" --dev
+geth --datadir "../../data" --dev --mine --rpc 
+#geth --datadir "../../data" --dev --mine --rpc --unlock=0
+
